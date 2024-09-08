@@ -1,9 +1,9 @@
 'use client'
-import productApi from '@/app/_apis/productApis';
-import Breadcrumb from '@/app/_components/Breadcrumb';
-import ProductList from '@/app/_components/ProductList';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import productApi from '../../_apis/productApis';
+import Breadcrumb from '../../_components/Breadcrumb';
+import ProductList from '../../_components/ProductList';
 import ProductBanner from '../_components/ProductBanner';
 import ProductInfo from '../_components/ProductInfo';
 

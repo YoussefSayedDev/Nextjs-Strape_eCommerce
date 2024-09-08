@@ -1,12 +1,12 @@
 'use client'
-import Cart from '@/app/_components/Cart';
-import { CartContext } from "@/app/_context/CartContext";
 import { UserButton, useUser } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { useContext, useEffect, useState } from 'react';
 import { MdShoppingCart } from "react-icons/md";
 import cartApis from "../_apis/cartApis";
+import { CartContext } from "../_context/CartContext";
+import Cart from './Cart';
 
 
 export default function Header() {

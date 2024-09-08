@@ -1,12 +1,12 @@
 'use client'
-import cartApis from "@/app/_apis/cartApis";
-import { CartContext } from "@/app/_context/CartContext";
 import { useUser } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 import { useContext } from 'react';
 import { FaCartShopping, FaRegCircleCheck } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import cartApis from "../../_apis/cartApis";
+import { CartContext } from "../../_context/CartContext";
 import SkeletonProductInfo from "./SkeletonProductInfo";
 
 export default function ProductInfo({product}) {

@@ -1,5 +1,4 @@
 'use client'
-import { CartContext } from "@/app/_context/CartContext";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -7,6 +6,7 @@ import { useContext, useState } from "react";
 import { FaCartShopping, FaRegCircleCheck } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import cartApis from "../_apis/cartApis";
+import { CartContext } from "../_context/CartContext";
 
 export default function Cart({ setOpenCart, openCart }) {
   const { cart, setCart} = useContext(CartContext);
